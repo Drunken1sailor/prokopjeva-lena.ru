@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<head lang="ru">
+	<meta charset="utf-8">
+
+	<title>Художник Лена Прокопьева</title>
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
+
+	<meta name="viewport" content="width=device-width, user-scalable=no">
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+	<main>
+		<header class="header">
+
+			<div class="header__background">
+				<div class="header__title">Художник Лена Прокопьева</div>
+				<img src="img/index/header/background.png" alt="">
+			</div>	
+			<nav class="header__burger">
+					<span>	</span>
+			</nav>
+			<div class="header__inner">
+				<nav class="nav">
+					<div class="nav__column">
+						<a class="nav__link" href="index.html">Главная</a>
+					</div>
+					<div class="nav__column">
+						<a class="nav__link" href="gallery.html">Галерея</a>
+					</div>
+					<div class="nav__column">
+						<a class="nav__link" href="biography.html">Биография</a>
+					</div>
+					<div class="nav__column">
+						<a class="nav__link" href="contacts.html">Контакты</a>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<section class="gallery gallery__body">
+			<div class="decor-up">
+				<img src="img/index/section/decor_up.png" alt="">
+			</div>
+			<div class="decor-side">
+				<div class="decor-img"><img src="img/index/section/angel_left.png" alt=""></div>
+				<div class="decor-img"><img src="img/index/section/decor_left.png" alt=""></div>
+				<div class="decor-img"><img src="img/index/section/angel_left.png" alt=""></div>
+			</div>
+			<div class="form">
+				<form action="#" id="form" class="form__body">
+					<h1 class="form__title">Заказать картину</h1>
+					<div class="form__description">Дорогой друг! Стоимость и условия работы обговариваются лично с художником в ходе телефонного или письменного диалога. Укажите в форме ниже ваше имя, почту и номер телефона чтобы мы могли с вами связаться!</div>
+					<div class="form__item">
+						<label for="formName" class="form__label">Ваше имя<span>*</span> :</label>
+						<input id="formName" name="name" type="text" class="form__input _req">
+					</div>
+					<div class="form__item">
+						<label for="formEmail" class="form__label">E-mail<span>*</span> :</label>
+						<input id="formEmail" name="email" type="text" class="form__input _req _email">
+					</div>
+					<div class="form__item">
+						<label for="formPhone" class="form__label">Контактный телефон<span>*</span> :</label>
+						<input id="formPhone" name="phone" type="text" class="form__input _req">
+					</div>
+					<div class="form__row">
+						<div class="form__item form__column">
+							<div class="form__label">Жанр:</div>
+							<select name="genre" class="select">
+								<option value="landscape" selected="selected">пейзаж</option>
+								<option value="naturmort">натюрморт</option>
+								<option value="portrait">портрет</option>
+								<option value="animalistic">анималистика</option>
+								<option value="hunting_and_fishing">охота и рыбалка</option>
+								<option value="abstraction">абстракция</option>
+								<option value="architecture">архитектура</option>
+							</select>
+						</div>
+						<div class="form__item form__column">
+							<div class="form__label">Техника:</div>
+							<select name="tech" class="select">
+								<option value="oil" selected="selected">масло</option>
+								<option value="aquarel">акварель</option>
+								<option value="mastihin">мастихин</option>
+							</select>
+						</div>
+						<div class="form__item form__column">
+							<label for="formSize" class="form__label">Размер (см):</label>
+							<input id="formSize" name="size" type="text" class="form__input _size" placeholder="80x30(шир x высота)">
+						</div>
+					</div>
+					<div class="form__item">
+						<label for="formMessage" class="form__label">Требования к картине:</label>
+						<textarea name="message" id="formMessage" class="form__input _message"></textarea>
+					</div>
+					<div class="form__item">
+						<div class="checkbox">
+							<input id="formAgreement" type="checkbox" name="agreement" class="checkbox__input _req">
+							<label for="formAgreement" class="checkbox__label"><span>Я даю своё согласие на обработку персональных данных в соответствии с <a href="#">Условиями</a>.<span>*</span></span></label>
+						</div>
+					</div>
+					<button type="submit" class="form__button">Отправить</button>
+				</form>
+			</div>
+			<div class="decor-side">
+				<div class="decor-img"><img src="img/index/section/angel_right.png" alt=""></div>
+				<div class="decor-img"><img src="img/index/section/decor_right.png" alt=""></div>
+				<div class="decor-img"><img src="img/index/section/angel_right.png" alt=""></div>
+			</div>
+		</section>
+		<footer>
+			<div class="copyrightTxt">
+				<p>
+					Copyright © plart.ru.com. All rights reserved <br>
+				</p>
+			</div>
+		</footer>
+	</main>
+	<script src="js/burger.js"></script>
+	<script src="js/orderForm.js"></script>
+</body>
+</html>
